@@ -9,11 +9,11 @@
 
 
 <%
-String id = request.getParameter("id");
+	String id = request.getParameter("id");
 String pw = request.getParameter("pw");
 String name = request.getParameter("name");
 String hp = request.getParameter("hp");
-pw = DigestUtils.sha512Hex(pw);	//lib는 등록했으나 안됨 DB에서 pw용량을 늘려도 안되고
+pw = DigestUtils.sha512Hex(pw); //lib는 등록했으나 안됨 DB에서 pw용량을 늘려도 안되고
 %>
 <!DOCTYPE html>
 <html>
@@ -35,7 +35,7 @@ pw = DigestUtils.sha512Hex(pw);	//lib는 등록했으나 안됨 DB에서 pw용�
 	sql.append(" where u_id = ?");
 	try {
 		Class.forName("oracle.jdbc.OracleDriver");
-		conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "raecam", "raecam");
+		conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "km", "km");
 		pstmt = conn.prepareStatement(sql.toString());
 		pstmt.setString(1, id);
 		rs = pstmt.executeQuery();
@@ -48,7 +48,7 @@ pw = DigestUtils.sha512Hex(pw);	//lib는 등록했으나 안됨 DB에서 pw용�
 	</script>
 	<%
 		} else {
-		sql.setLength(0);	
+		sql.setLength(0);
 		sql.append(" insert into user_info (u_id, u_pw, u_name, u_hp)");
 		sql.append(" values (?, ?, ?, ?)");
 		pstmt = conn.prepareStatement(sql.toString());
@@ -58,14 +58,15 @@ pw = DigestUtils.sha512Hex(pw);	//lib는 등록했으나 안됨 DB에서 pw용�
 		pstmt.setString(4, hp);
 		if (pstmt.executeUpdate() > 0) {
 			result = true;
-		}
-	%>	
+	%>
 	<script type="text/javascript">
-	location.href='signin.jsp';
+		alert('회원가입이 완료되었습니다.');
+		self.close();
 	</script>
 
 	<%
 		}
+	}
 	} catch (Exception e) {
 		e.printStackTrace();
 	} finally {

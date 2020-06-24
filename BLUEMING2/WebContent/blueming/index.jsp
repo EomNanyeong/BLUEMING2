@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>Blueming!</title>
+<title>Blueming</title>
 <meta charset="utf-8">
 <link type="text/css" rel="stylesheet" href="styles/galleriffic.css" />
 <link type="text/css" rel="stylesheet" href="styles/style.css" />
@@ -11,6 +11,10 @@
 <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
 <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
 <script type="text/javascript" src="js/gallery-settings.js"></script>
+<script type = "text/javascript">
+function login(){
+	window.open("login.jsp");
+}</script>
 <link
 	href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
 	rel="stylesheet">
@@ -61,9 +65,9 @@ join {
 	%>
 	<div id="btn_group">
 		<button type="button" id="login"
-			onclick="window.open('login.jsp', 'width = 600', 'height = 100')">로그인</button>
+			onclick="window.open('login.jsp', 'login',  'width = 600, height = 450', 'resizeable= no', 'scrollbars = no', 'status = no')">로그인</button>
 		<button type="button" id="join"
-			onclick="window.open('join.jsp', 'width = 600', 'height = 100')">회원가입</button>
+			onclick="window.open('signin.jsp', 'width = 600', 'height = 100')">회원가입</button>
 	</div>
 	<div id="wrap">
 		<div id="header">

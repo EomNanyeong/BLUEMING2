@@ -52,6 +52,12 @@
             </table>
             <br>
             <input type="submit" value="OK">
+            <script type="text/javascript">
+            	function goParent(){
+            		opener.document.getElementById("u_name").value = document.getElementById("id").value;
+            		window.close();
+            	}
+            </script>
         </form>
     </div>
 </form>
