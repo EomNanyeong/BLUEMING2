@@ -31,7 +31,7 @@
 	try {
 		System.out.println("2");
 		Class.forName("oracle.jdbc.OracleDriver");
-		conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "mini", "mini1");
+		conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "blueming", "blueming");
 		stmt = conn.prepareStatement(sql.toString());
 		stmt.setString(1, id);
 		stmt.setString(2, pw);
@@ -47,13 +47,9 @@
 			<%
 		}else{
 			System.out.println("3");
-			out.println("<script>alert('아이디혹은 비밀번호가 틀렸습니다.'); history.back();</script>");
+			out.println("<script>alert('아이디혹은 비밀번호가 틀렸습니다.'); location=history.back();</script>");
 		}
 %>
-<script type="text/javascript">
-	alert('아이디 혹은 비밀번호가 틀립니다.');
-	location=history.back();
-</script>
 <%
 	} catch(Exception e) {
 		e.printStackTrace();
