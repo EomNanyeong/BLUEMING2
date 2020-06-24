@@ -49,7 +49,6 @@ join {
 </head>
 
 <body>
-<<<<<<< HEAD
    <%
       if (session.getAttribute("id") == null) {
    %>
