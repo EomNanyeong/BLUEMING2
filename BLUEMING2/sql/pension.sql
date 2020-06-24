@@ -1,6 +1,6 @@
 create table user_info(
 u_id             varchar2(15),
-u_pw             varchar2(15),
+u_pw             varchar2(128),
 u_name           varchar2(5),
 u_hp             varchar2(15),
     constraint u_id_pk            primary key(u_id),
@@ -8,6 +8,8 @@ u_hp             varchar2(15),
     constraint u_name_nn          check(u_name is not null),
     constraint u_hp_nn            check(u_hp is not null));
 
+    drop table user_info;
+    
 create table room(
 room_no       number,
 room_name     varchar2(15),
@@ -47,3 +49,5 @@ select * from user_info;
 select u_id, u_name
 from user_info
 where  u_id='next' and u_pw='1111';
+
+select * from tab;
