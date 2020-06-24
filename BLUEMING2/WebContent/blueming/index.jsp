@@ -230,7 +230,7 @@ join {
 		<!--end footer-->
 	</div>
 	<!--end wrap-->
->>>>>>> branch 'master' of https://github.com/EomNanyeong/BLUEMING2
+
 </body>
 </html>
 <!--  -->
