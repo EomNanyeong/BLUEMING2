@@ -56,9 +56,9 @@ String user_name = null;
 		<script type="text/javascript">
 			alert('환영합니다.');
 			window.close();
+			opener.document.location.reload();
 		</script>
 		<%
-		out.println(id + "님 환영합니다.");
 			} else {
 			out.println("<script>alert('아이디혹은 비밀번호가 틀렸습니다.'); history.back();</script>");
 		}

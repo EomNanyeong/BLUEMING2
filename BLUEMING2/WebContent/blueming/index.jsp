@@ -3,15 +3,17 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>Blueming222</title>
+<title>Blueming</title>
 <meta charset="utf-8">
 <link type="text/css" rel="stylesheet" href="styles/galleriffic.css" />
 <link type="text/css" rel="stylesheet" href="styles/style.css" />
+<link rel="icon" type="image/png" href="favicon.png">
 <script type="text/javascript" src="js/jquery-1.3.2.js"></script>
 <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
 <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
 <script type="text/javascript" src="js/gallery-settings.js"></script>
 <script type = "text/javascript">
+
 function login(){
 	window.open("login.jsp");
 }</script>
@@ -61,9 +63,7 @@ join {
 	<%
 		} else {
 	%>
-	<script> function newmain(){
-		location.reload();
-	}</script>
+	
 		<div id="btn_group">
 		<%=session.getAttribute("i_name")%>님 환영합니다.
 		<button type="button" id="mypage"
