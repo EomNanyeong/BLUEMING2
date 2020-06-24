@@ -39,7 +39,7 @@ pw = DigestUtils.sha512Hex(pw); //lib는 등록했으나 안됨 DB에서 pw용�
 		pstmt = conn.prepareStatement(sql.toString());
 		pstmt.setString(1, id);
 		rs = pstmt.executeQuery();
-
+		System.out.println("1");
 		if (rs.next()) {
 	%>
 	<script type="text/javascript">
@@ -48,24 +48,29 @@ pw = DigestUtils.sha512Hex(pw); //lib는 등록했으나 안됨 DB에서 pw용�
 	</script>
 	<%
 		} else {
+			System.out.println("2");
 		sql.setLength(0);
 		sql.append(" insert into user_info (u_id, u_pw, u_name, u_hp)");
 		sql.append(" values (?, ?, ?, ?)");
+		pstmt = null;
 		pstmt = conn.prepareStatement(sql.toString());
 		pstmt.setString(1, id);
 		pstmt.setString(2, pw);
 		pstmt.setString(3, name);
 		pstmt.setString(4, hp);
+		System.out.println("3");
 		if (pstmt.executeUpdate() > 0) {
+			System.out.println("4");
 			result = true;
+		}
+		System.out.println("5");
 	%>
 	<script type="text/javascript">
 		alert('회원가입이 완료되었습니다.');
-		self.close();
+		window.close();
 	</script>
 
 	<%
-		}
 	}
 	} catch (Exception e) {
 		e.printStackTrace();

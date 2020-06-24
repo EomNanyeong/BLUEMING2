@@ -51,10 +51,10 @@
                 </tr>
             </table>
             <br>
-            <input type="submit" value="OK">
+            <input type="submit" value="OK" id="login_btn">
             <script type="text/javascript">
             	function goParent(){
-            		opener.document.getElementById("u_name").value = document.getElementById("id").value;
+            		opener.document.getElementById("id").value = document.getElementById("login_btn").value;
             		window.close();
             	}
             </script>

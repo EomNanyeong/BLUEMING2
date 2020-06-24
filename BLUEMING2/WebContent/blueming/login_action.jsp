@@ -50,6 +50,7 @@ String user_name = null;
 			rs = stmt.executeQuery();
 
 			if (id.equals("next") && pw.equals("1111")) {
+				session.setMaxInactiveInterval(60*60);
 				session.setAttribute("id", id);
 		%>
 		<script type="text/javascript">
@@ -57,6 +58,7 @@ String user_name = null;
 			window.close();
 		</script>
 		<%
+		out.println(id + "님 환영합니다.");
 			} else {
 			out.println("<script>alert('아이디혹은 비밀번호가 틀렸습니다.'); history.back();</script>");
 		}
