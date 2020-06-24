@@ -65,7 +65,7 @@ join {
 	%>
 	
 		<div id="btn_group">
-		<%=session.getAttribute("i_name")%>님 환영합니다.
+		<%=session.getAttribute("id")%>님 환영합니다.
 		<button type="button" id="mypage"
 			onclick="window.open('mypage.jsp', 'login',  'width = 600, height = 450', 'resizeable= no', 'scrollbars = no', 'status = no')">My Page</button>
 		<button type="button" id="logout"
@@ -89,7 +89,7 @@ join {
 				<ul id="nav-pages">
 					<li><a href="index.html" class="current">Home</a><span></span></li>
 					<li><a href="short-bio.html">객실 정보</a><span></span></li>
-					<li><a href="articles.html">시설 안내</a><span></span></li>
+					<li><a href="articles.jsp">시설 안내</a><span></span></li>
 					<li><a href="contact.html">오시는 길</a></li>
 				</ul>
 				<!--end nav-pages-->
