@@ -42,7 +42,7 @@ select * from user_info;
 select * from room;
 select * from book_info;
 
-insert into user_info(u_id, u_pw, u_name, u_hp) values ('next','1111','eny','01011112222');
+insert into user_info(u_id, u_pw, u_name, u_hp) values ('raecam','1234','김래경','01068603226');
 
 select * from user_info;
 

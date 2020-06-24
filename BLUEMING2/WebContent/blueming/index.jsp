@@ -63,7 +63,7 @@ join {
 		<button type="button" id="login"
 			onclick="window.open('login.jsp', 'width = 600', 'height = 100')">로그인</button>
 		<button type="button" id="join"
-			onclick="window.open('join.jsp', 'width = 600', 'height = 100')">회원가입</button>
+			onclick="window.open('signin.jsp', 'width = 600', 'height = 100')">회원가입</button>
 	</div>
 	<div id="wrap">
 		<div id="header">
