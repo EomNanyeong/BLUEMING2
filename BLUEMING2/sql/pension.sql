@@ -1,7 +1,11 @@
 create table user_info(
 u_id             varchar2(15),
 u_pw             varchar2(128),
+<<<<<<< HEAD
 u_name           varchar2(15),
+=======
+u_name           varchar2(5),
+>>>>>>> branch 'master' of https://github.com/EomNanyeong/BLUEMING2.git
 u_hp             varchar2(15),
     constraint u_id_pk            primary key(u_id),
     constraint u_pw_nn            check(u_pw is not null),
