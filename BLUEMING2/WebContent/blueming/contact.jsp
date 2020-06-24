@@ -34,8 +34,7 @@
     <!--end nav-->
   </div>
   <!--end header-->
-  <div id="main">
-    	<div id="map" align="center" style="width:700px;height:400px;"></div>
+    	<div id="map"  style="width:60%;height:350px;align:center;margin-left:20%;margin-right:20%;margin-top:99px;"></div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=47b19895a71fd79880bb96ccc3694237"></script>
 	<script>
 		var container = document.getElementById('map');
@@ -53,7 +52,6 @@
 		marker.setMap(map);
 		
 	</script>
-  </div>
 
 
 
