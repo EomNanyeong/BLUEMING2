@@ -48,7 +48,6 @@
 	location=history.back();
 </script>
 <%
-		}
 	} catch(Exception e) {
 		e.printStackTrace();
 	} finally {
