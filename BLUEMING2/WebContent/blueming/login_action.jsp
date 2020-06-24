@@ -50,11 +50,13 @@ String user_name = null;
          rs = stmt.executeQuery();
 
          if (id.equals("next") && pw.equals("1111")) {
+            session.setMaxInactiveInterval(60*60);
             session.setAttribute("id", id);
       %>
       <script type="text/javascript">
          alert('환영합니다.');
          window.close();
+         opener.document.location.reload();
       </script>
       <%
          } else {

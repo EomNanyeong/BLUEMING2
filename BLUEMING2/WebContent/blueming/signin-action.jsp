@@ -35,7 +35,7 @@ pw = DigestUtils.sha512Hex(pw);	//lib는 등록했으나 안됨 DB에서 pw용�
 	sql.append(" where u_id = ?");
 	try {
 		Class.forName("oracle.jdbc.OracleDriver");
-		conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "raecam", "raecam");
+		conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "blueming", "blueming");
 		pstmt = conn.prepareStatement(sql.toString());
 		pstmt.setString(1, id);
 		rs = pstmt.executeQuery();
@@ -61,7 +61,8 @@ pw = DigestUtils.sha512Hex(pw);	//lib는 등록했으나 안됨 DB에서 pw용�
 		}
 	%>	
 	<script type="text/javascript">
-	location.href='signin.jsp';
+	alert('회원가입이 완료되었습니다.');
+	self.close();
 	</script>
 
 	<%

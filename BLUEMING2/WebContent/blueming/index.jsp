@@ -50,25 +50,29 @@ join {
 
 <body>
    <%
-      if (session.getAttribute("u_id") == null) {
+      if (session.getAttribute("id") == null) {
    %>
-   <form method="post" action="user_check.jsp"></form>
-   <%
-      } else {
-   %>
-   <form method="post" action="logout.jsp">
-      <%=session.getAttribute("i_name")%>님 환영합니다.
-      <button type="button">로그아웃</button>
-   </form>
-   <%
-      }
-   %>
-   <div id="btn_group">
+      <div id="btn_group">
       <button type="button" id="login"
          onclick="window.open('login.jsp', 'login',  'width = 600, height = 450', 'resizeable= no', 'scrollbars = no', 'status = no')">로그인</button>
       <button type="button" id="join"
          onclick="window.open('signin.jsp', 'width = 600', 'height = 100')">회원가입</button>
    </div>
+   <%
+      } else {
+   %>
+   
+      <div id="btn_group">
+      <%=session.getAttribute("i_name")%>님 환영합니다.
+      <button type="button" id="mypage"
+         onclick="window.open('mypage.jsp', 'login',  'width = 600, height = 450', 'resizeable= no', 'scrollbars = no', 'status = no')">My Page</button>
+      <button type="button" id="logout"
+         onclick="location.href='logout.jsp'">로그아웃</button>
+         
+      </div>
+   <%
+      }
+   %>
    <div id="wrap">
       <div id="header">
          <div class="logo">
