@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	String id = "";
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,6 +52,14 @@
                         <input type="password" name="password" maxlength="15">
                     </td>
                 </tr>
+                <tr>
+					<th></th>	
+					<td><input type="checkbox" name="save_id" 
+						<% if(!id.equals("")) { %>
+						checked="checked"
+						<% } %>
+						/> 아이디 저장</td>
+				</tr>
             </table>
             <br>
             <input type="submit" value="OK">
