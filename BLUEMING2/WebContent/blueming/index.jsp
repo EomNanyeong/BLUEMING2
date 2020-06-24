@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>Blueming</title>
+<title>Blueming222</title>
 <meta charset="utf-8">
 <link type="text/css" rel="stylesheet" href="styles/galleriffic.css" />
 <link type="text/css" rel="stylesheet" href="styles/style.css" />
