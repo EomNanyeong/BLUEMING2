@@ -43,7 +43,7 @@ String user_name = null;
       sql.append(" where  u_id=? and u_pw=?");
       try {
          Class.forName("oracle.jdbc.OracleDriver");
-         conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "km", "km");
+         conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "blueming", "blueming");
          stmt = conn.prepareStatement(sql.toString());
          stmt.setString(1, id);
          stmt.setString(2, pw);

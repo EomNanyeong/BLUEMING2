@@ -47,6 +47,7 @@ insert into user_info(u_id, u_pw, u_name, u_hp) values ('next','1111','eny','010
 
 select * from user_info;
 
+
 select u_id, u_name
 from user_info
 where  u_id='next' and u_pw='1111';
