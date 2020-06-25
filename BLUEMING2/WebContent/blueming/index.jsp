@@ -15,10 +15,7 @@
 <script type="text/javascript" src="js/gallery-settings.js"></script>
 <script type = "text/javascript"></script>
 
-
-<link
-   href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
-   rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 <style type="text/css">
 body {
    font-family: 'Do Hyeon', sans-serif;
@@ -69,9 +66,9 @@ join {
    
       <div id="btn_group">
       <%=session.getAttribute("u_name")%>님 환영합니다.
-      <button type="button" id="mypage" 
-         onclick="location.href='mypage.jsp'">My Page</button>
-      <button type="button" id="logout"
+	  <button type="button" style="WIDTH: 65pt; HEIGHT: 25pt" id="mypage"
+         onclick="location.href='mypage.jsp'">마이페이지</button>
+      <button type="button" style="WIDTH: 55pt; HEIGHT: 25pt" id="logout"
          onclick="location.href='logout.jsp'">로그아웃</button>
          
       </div>
@@ -91,7 +88,7 @@ join {
          <div id="nav">
             <ul id="nav-pages">
                <li><a href="index.jsp" class="current">Home</a><span></span></li>
-               <li><a href="short-bio.jsp" >이용 수칙</a><span></span></li>
+               <li><a href="short-bio.jsp" >이용수칙</a><span></span></li>
                <li><a href="room.jsp">객실 정보</a><span></span></li>
                <li><a href="articles.jsp">시설 안내</a><span></span></li>
                <li><a href="contact.jsp">오시는 길</a></li>
