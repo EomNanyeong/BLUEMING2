@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="favicon.png">
 
-<title>Insert title here</title>
+<title>LOGIN</title>
 <style>
         #wrap{
             width:530px;

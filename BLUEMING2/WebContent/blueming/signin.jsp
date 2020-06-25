@@ -33,7 +33,7 @@
         <b><font size="6" color="gray">회원가입</font></b>
         <br><br><br>
         
-        <form action="signin-action.jsp" method="get">
+        <form action="signin_action.jsp" method="get">
             <table style = "width:auto;">
                 <tr>
                     <td id="title">아이디</td>

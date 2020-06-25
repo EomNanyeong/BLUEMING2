@@ -26,7 +26,7 @@
       }
    }
 </script>
-<title>LoginPro</title>
+<title>Log-In</title>
 </head>
 <body>
    <form method="post" name="writeform" action="index.jsp"
@@ -59,12 +59,14 @@
                session.setMaxInactiveInterval(60*60);
                user_name = rs.getString("u_name");
                session.setAttribute("u_id", id);
-               session.setAttribute("u_name", user_name);               
+               session.setAttribute("u_name", user_name);
+               
          %>
          <script type="text/javascript">
             alert('환영합니다.');
             window.close();
             opener.document.location.reload();
+           // response.sendRedirect("index.jsp");
          </script>
          <%
             } else {
