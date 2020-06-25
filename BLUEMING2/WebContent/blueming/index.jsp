@@ -6,17 +6,16 @@
 <head>
 <title>Blueming</title>
 <meta charset="utf-8">
-<link type="text/css" rel="stylesheet" href="styles/galleriffic.css" />
-<link type="text/css" rel="stylesheet" href="styles/style.css" />
+<link type="text/css" rel="stylesheet" href="styles/galleriffic.css" >
+<link type="text/css" rel="stylesheet" href="styles/style.css" >
 <link rel="icon" type="image/png" href="favicon.png">
 <script type="text/javascript" src="js/jquery-1.3.2.js"></script>
 <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
 <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
 <script type="text/javascript" src="js/gallery-settings.js"></script>
-<script type = "text/javascript">
+<script type = "text/javascript"></script>
 
 
-</script>
 <link
    href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
    rel="stylesheet">
@@ -48,7 +47,7 @@ join {
    background-color: skyblue;
 }
 
-current.on {color : #F34607}
+.selected {color : #F34607}
 
 </style>
 </head>
@@ -92,7 +91,7 @@ current.on {color : #F34607}
          <div id="nav">
             <ul id="nav-pages">
                <li><a href="index.jsp" class="current">Home</a><span></span></li>
-               <li><a href="short-bio.jsp">이용 수칙</a><span></span></li>
+               <li><a href="short-bio.jsp" >이용 수칙</a><span></span></li>
                <li><a href="room.jsp">객실 정보</a><span></span></li>
                <li><a href="articles.jsp">시설 안내</a><span></span></li>
                <li><a href="contact.jsp">오시는 길</a></li>

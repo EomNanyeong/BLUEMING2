@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>Juma | Short Bio</title>
+<title>Blueming 이용 수칙</title>
 <meta charset="utf-8">
 <link type="text/css" rel="stylesheet" href="styles/style.css" />
 <script type="text/javascript" src="js/jquery-1.3.2.js"></script>

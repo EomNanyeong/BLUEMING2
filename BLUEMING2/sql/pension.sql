@@ -1,7 +1,11 @@
 create table user_info(
 u_id             varchar2(15),
 u_pw             varchar2(128),
+<<<<<<< HEAD
 u_name           varchar2(15),
+=======
+u_name           varchar2(5),
+>>>>>>> branch 'master' of https://github.com/EomNanyeong/BLUEMING2.git
 u_hp             varchar2(15),
     constraint u_id_pk            primary key(u_id),
     constraint u_pw_nn            check(u_pw is not null),
@@ -9,7 +13,6 @@ u_hp             varchar2(15),
     constraint u_hp_nn            check(u_hp is not null));
 
     drop table user_info;
-    
     
 create table room(
 room_no       number,
@@ -19,6 +22,18 @@ price         number,
     constraint room_nanme_nn       check(room_name is not null),
     constraint room_price_nn       check(price is not null));
 
+insert into room(room_no, room_name, price) values ('101','Palette I', 65000);
+insert into room(room_no, room_name, price) values ('102','Palette II', 65000);
+
+insert into room(room_no, room_name, price) values ('201','Love Poem I', 80000);
+insert into room(room_no, room_name, price) values ('202','Love Poem II', 80000);
+
+insert into room(room_no, room_name, price) values ('301','Night Letter I', 120000);
+insert into room(room_no, room_name, price) values ('302','Night Letter II', 120000);
+
+
+
+    
 create table book_info(
 book_no         number,
 guest_name      varchar2(5),
@@ -53,5 +68,3 @@ from user_info
 where  u_id='next' and u_pw='1111';
 
 select * from tab;
-
-select * from cols where table_name='user_info';
