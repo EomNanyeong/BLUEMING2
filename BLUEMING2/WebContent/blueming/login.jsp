@@ -40,7 +40,7 @@
                 <tr>
                     <td id="title">아이디</td>
                     <td>
-                        <input type="text" name="id" maxlength="20"> 
+                        <input type="text" name="id" maxlength="20" autofocus="autofocus"> 
                     </td>
                 </tr>
                         

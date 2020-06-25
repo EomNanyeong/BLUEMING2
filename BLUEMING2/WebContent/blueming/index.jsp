@@ -15,9 +15,8 @@
 <script type="text/javascript" src="js/gallery-settings.js"></script>
 <script type = "text/javascript">
 
-function login(){
-   window.open("login.jsp");
-}</script>
+
+</script>
 <link
    href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
    rel="stylesheet">
@@ -48,13 +47,16 @@ join {
    color: white;
    background-color: skyblue;
 }
+
+current.on {color : #F34607}
+
 </style>
 </head>
 
 <body>
    <%
       String u_name = (String)session.getAttribute("user_name");
-      if (session.getAttribute("id") == null) {
+      if (session.getAttribute("u_id") == null) {
    %>
       <div id="btn_group">
       <button type="button" id="login"
@@ -67,16 +69,16 @@ join {
    %>
    
       <div id="btn_group">
-      <%=session.getAttribute("id")%>님 환영합니다.
-      <button type="button" id="mypage"
-         onclick="window.open('mypage.jsp', 'login',  'width = 600, height = 450', 'resizeable= no', 'scrollbars = no', 'status = no')">My Page</button>
+      <%=session.getAttribute("u_name")%>님 환영합니다.
+      <button type="button" id="mypage" 
+         onclick="location.href='mypage.jsp'">My Page</button>
       <button type="button" id="logout"
          onclick="location.href='logout.jsp'">로그아웃</button>
          
       </div>
    <%
       }
-   %>
+   %> 
    <div id="wrap">
       <div id="header">
          <div class="logo">
@@ -95,6 +97,7 @@ join {
                <li><a href="articles.jsp">시설 안내</a><span></span></li>
                <li><a href="contact.jsp">오시는 길</a></li>
             </ul>
+           
             <!--end nav-pages-->
          </div>
          <!--end nav-->
