@@ -88,8 +88,8 @@ margin : 10px 0px 0px 100px; padding :0px 0px 0px 3px}
          <!--end subtitle-->
          <div id="nav">
             <ul id="nav-pages">
-               <li><a href="index.jsp" class="current">Home</a><span></span></li>
-               <li><a href="short-bio.jsp">이용수칙</a><span></span></li>
+               <li><a href="index.jsp" >Home</a><span></span></li>
+               <li><a href="short-bio.jsp" class="current">이용수칙</a><span></span></li>
                <li><a href="short-bio.jsp">객실 정보</a><span></span></li>
                <li><a href="articles.jsp">시설 안내</a><span></span></li>
                <li><a href="contact.jsp">오시는 길</a></li>
