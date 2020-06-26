@@ -6,16 +6,21 @@
 <head>
 <title>Blueming</title>
 <meta charset="utf-8">
-<link type="text/css" rel="stylesheet" href="styles/galleriffic.css" >
-<link type="text/css" rel="stylesheet" href="styles/style.css" >
+<link type="text/css" rel="stylesheet" href="styles/galleriffic.css" />
+<link type="text/css" rel="stylesheet" href="styles/style.css" />
 <link rel="icon" type="image/png" href="favicon.png">
 <script type="text/javascript" src="js/jquery-1.3.2.js"></script>
 <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
 <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
 <script type="text/javascript" src="js/gallery-settings.js"></script>
-<script type = "text/javascript"></script>
+<script type = "text/javascript">
 
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+function login(){
+   window.open("login.jsp");
+}</script>
+<link
+   href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+   rel="stylesheet">
 <style type="text/css">
 body {
    font-family: 'Do Hyeon', sans-serif;
@@ -44,7 +49,18 @@ join {
    background-color: skyblue;
 }
 
-.selected {color : #F34607}
+.padding {
+	display: flex;
+}
+.top {
+	flex:1;
+	padding-top:10px;
+}
+
+.my-hr1 {
+border: 0;
+height: 1px;
+}
 
 </style>
 </head>
@@ -58,7 +74,7 @@ join {
       <button type="button" id="login"
          onclick="window.open('login.jsp', 'login',  'width = 600, height = 450', 'resizeable= no', 'scrollbars = no', 'status = no')">로그인</button>
       <button type="button" id="join"
-         onclick="window.open('signin.jsp', 'width = 600', 'height = 100')">회원가입</button>
+         onclick="window.open('signin.jsp', 'join', 'width = 600, height = 450', 'resizeable= no', 'scrollbars = no', 'status = no')">회원가입</button>
    </div>
    <%
       } else {
@@ -66,7 +82,7 @@ join {
    
       <div id="btn_group">
       <%=session.getAttribute("u_name")%>님 환영합니다.
-	  <button type="button" style="WIDTH: 65pt; HEIGHT: 25pt" id="mypage"
+      <button type="button" style="WIDTH: 65pt; HEIGHT: 25pt" id="mypage"
          onclick="location.href='mypage.jsp'">마이페이지</button>
       <button type="button" style="WIDTH: 55pt; HEIGHT: 25pt" id="logout"
          onclick="location.href='logout.jsp'">로그아웃</button>
@@ -74,7 +90,7 @@ join {
       </div>
    <%
       }
-   %> 
+   %>
    <div id="wrap">
       <div id="header">
          <div class="logo">
@@ -87,13 +103,12 @@ join {
          <!--end subtitle-->
          <div id="nav">
             <ul id="nav-pages">
-               <li><a href="index.jsp" class="current">Home</a><span></span></li>
-               <li><a href="short-bio.jsp" >이용수칙</a><span></span></li>
-               <li><a href="room.jsp">객실 정보</a><span></span></li>
-               <li><a href="articles.jsp">시설 안내</a><span></span></li>
-               <li><a href="contact.jsp">오시는 길</a></li>
+               <li><a style="font-size:25px" href="index.jsp" class="current">Home</a><span></span></li>
+               <li><a style="font-size:25px" href="short-bio.jsp">이용 수칙</a><span></span></li>
+               <li><a style="font-size:25px" href="room.jsp">객실 정보</a><span></span></li>
+               <li><a style="font-size:25px" href="articles.jsp">시설 안내</a><span></span></li>
+               <li><a style="font-size:25px" href="contact.jsp">오시는 길</a></li>
             </ul>
-           
             <!--end nav-pages-->
          </div>
          <!--end nav-->

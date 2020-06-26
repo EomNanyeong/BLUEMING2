@@ -10,10 +10,10 @@
 
 <%
 	String id = request.getParameter("id");
-String pw = request.getParameter("pw");
-String name = request.getParameter("name");
-String hp = request.getParameter("hp");
-pw = DigestUtils.sha512Hex(pw); //lib는 등록했으나 안됨 DB에서 pw용량을 늘려도 안되고
+	String pw = request.getParameter("pw");
+	String name = request.getParameter("name");
+	String hp = request.getParameter("hp");
+	pw = DigestUtils.sha512Hex(pw); //lib는 등록했으나 안됨 DB에서 pw용량을 늘려도 안되고
 %>
 <!DOCTYPE html>
 <html>
@@ -58,16 +58,14 @@ pw = DigestUtils.sha512Hex(pw); //lib는 등록했으나 안됨 DB에서 pw용�
 		pstmt.setString(4, hp);
 		if (pstmt.executeUpdate() > 0) {
 			result = true;
-		}
 	%>
 	<script type="text/javascript">
 		alert('회원가입이 완료되었습니다.');
 		window.close();
 	</script>
-
 	<%
-	
-	}
+		}
+		}
 	} catch (Exception e) {
 		e.printStackTrace();
 	} finally {
@@ -80,13 +78,13 @@ pw = DigestUtils.sha512Hex(pw); //lib는 등록했으나 안됨 DB에서 pw용�
 			try {
 		pstmt.close();
 			} catch (Exception e) {
-			}
+			}	
 		if (conn != null)
 			try {
 		conn.close();
 			} catch (Exception e) {
 			}
-	}
+		}
 	%>
 </body>
 </html>

@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>Blueming</title>
+<title>마이페이지</title>
 <meta charset="utf-8">
 <link type="text/css" rel="stylesheet" href="styles/galleriffic.css" />
 <link type="text/css" rel="stylesheet" href="styles/style.css" />
@@ -158,7 +158,7 @@ function openTab(evt, tabName) {
    sql.append(" where u_id = ?");
    try {
       Class.forName("oracle.jdbc.OracleDriver");
-      conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "km", "km");
+      conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "bluleming", "blueming");
       pstmt = conn.prepareStatement(sql.toString());
       pstmt.setString(1, session.getAttribute("u_id"));
       rs = pstmt.executeQuery();

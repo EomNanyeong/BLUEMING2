@@ -47,6 +47,18 @@ join {
 #content {
 margin : 10px 0px 0px 100px; padding :0px 0px 0px 3px}
 
+.padding {
+	display: flex;
+}
+.top {
+	flex:1;
+	padding-top:10px;
+}
+
+.my-hr1 {
+border: 0;
+height: 1px;
+}
 
 </style>
 </head>
@@ -67,9 +79,9 @@ margin : 10px 0px 0px 100px; padding :0px 0px 0px 3px}
    
       <div id="btn_group">
       <%=session.getAttribute("u_name")%>님 환영합니다.
-      <button type="button" id="mypage"
-         onclick="location.href='mypage.jsp'">My Page</button>
-      <button type="button" id="logout"
+      <button type="button" style="WIDTH: 65pt; HEIGHT: 25pt" id="mypage"
+         onclick="location.href='mypage.jsp'">마이페이지</button>
+      <button type="button" style="WIDTH: 55pt; HEIGHT: 25pt" id="logout"
          onclick="location.href='logout.jsp'">로그아웃</button>
          
       </div>
@@ -88,11 +100,11 @@ margin : 10px 0px 0px 100px; padding :0px 0px 0px 3px}
          <!--end subtitle-->
          <div id="nav">
             <ul id="nav-pages">
-               <li><a href="index.jsp" >Home</a><span></span></li>
-               <li><a href="short-bio.jsp" class="current">이용수칙</a><span></span></li>
-               <li><a href="short-bio.jsp">객실 정보</a><span></span></li>
-               <li><a href="articles.jsp">시설 안내</a><span></span></li>
-               <li><a href="contact.jsp">오시는 길</a></li>
+               <li><a style="font-size:25px" href="index.jsp" >Home</a><span></span></li>
+               <li><a style="font-size:25px" href="short-bio.jsp" class="current">이용 수칙</a><span></span></li>
+               <li><a style="font-size:25px" href="room.jsp">객실 정보</a><span></span></li>
+               <li><a style="font-size:25px" href="articles.jsp">시설 안내</a><span></span></li>
+               <li><a style="font-size:25px" href="contact.jsp">오시는 길</a></li>
             </ul>
             <!--end nav-pages-->
          </div>

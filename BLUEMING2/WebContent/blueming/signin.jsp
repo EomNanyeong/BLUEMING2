@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="favicon.png">
-<title>Insert title here</title>
+<title>signin</title>
 <style>
         #wrap{
             width:530px;
@@ -14,9 +14,9 @@
             text-align:center;
         }
         table{
-        	width:60%;
-        	margin:auto;
-        	text-align:center;
+           width:60%;
+           margin:auto;
+           text-align:center;
             border:3px solid skyblue;
         }
         td{
@@ -33,7 +33,7 @@
         <b><font size="6" color="gray">회원가입</font></b>
         <br><br><br>
         
-        <form action="signin_action.jsp" method="get">
+        <form action="signin-action.jsp" method="get">
             <table style = "width:auto;">
                 <tr>
                     <td id="title">아이디</td>
@@ -62,7 +62,7 @@
                 </tr>
             </table>
             <br>
-            <input type="submit" value="가입">  <input type="button" value="취소">
+            <input type="submit" value="가입">  <input type="button" onClick="window.close()" value="취소">
         </form>
     </div>
 </body>
